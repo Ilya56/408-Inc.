@@ -6,7 +6,7 @@ var start = function()
 	alert(sum);
 	//alert("n = "+n+"\nn! = "+fact(n));
 	//document.getElementById('in').value="name";
-}
+};
 
 var fact = function(a)
 {
@@ -14,11 +14,31 @@ var fact = function(a)
 		return a*fact(a-1);
 	else
 		return 1;
-}
+};
 
 var handleClick = function(Event)
 {
 	alert("Q");
+};
+
+/*document.getElementById('home').addEventListener('click', handleClick);*/
+
+var lang;
+function getLang() {
+	localStorage.getItem('language') === null ? setLang('en') : false;
+
 }
 
-document.getElementById('b2').addEventListener('click', handleClick);
+function setLang(lang1) {
+	localStorage.setItem('language', lang)
+	lang = lang1
+}
+
+function setLang() {
+	if navigator.language == 'ru' {
+		setLang('lang.ru.js')
+	}
+	alert(lang.home)
+}
+
+window.onload = s;

@@ -45,10 +45,10 @@ a:link
 }
 a:hover
 {
-	background-image : url(../img/button.png);
-	color : red;
+	background-image: url(../img/button.png);
+	color: red;
 }
 #home
 {
-	margin-left : 80px;
+	margin-left: 80px;
 }
