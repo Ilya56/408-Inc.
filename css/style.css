@@ -7,28 +7,25 @@ body
 }
 #head
 {
-	float: left;
-    position: relative;
-    left: 50%;
-	left: -50%;
-	height : 110px;
-	margin: 0px 40px;
-	margin-top: 20px;
-	min-width : 960px;
-	max-width : 960px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    width: 960px;
+    height: 100px;
+    min-width: 960px;
 }
 #title
 {
-	margin : 0px;
 	position: relative;
-	/*float: left;*/
+	margin : 0 auto;
 	margin-left : 20px;
 	font-size : 72px;
 	font-family : "Bauhaus 93";
 	color : #ff9900;
 	width : 330px;
-	height : 50px;
-	display:inline-block;
+	height : 72px;
+	display: inline-block;
 }
 .menuButtons
 {
