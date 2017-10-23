@@ -1,0 +1,57 @@
+body
+{
+	background-image : url(../img/back.png);
+	background-repeat : no-repeat;
+	background-position: top;
+	background-color : #2f2f2f;
+}
+#head
+{
+	float: left;
+    position: relative;
+    left: 50%;
+	left: -50%;
+	height : 110px;
+	margin: 0px 40px;
+	margin-top: 20px;
+	min-width : 960px;
+	max-width : 960px;
+}
+#title
+{
+	margin : 0px;
+	position: relative;
+	/*float: left;*/
+	margin-left : 20px;
+	font-size : 72px;
+	font-family : "Bauhaus 93";
+	color : #ff9900;
+	width : 330px;
+	height : 50px;
+	display:inline-block;
+}
+.menuButtons
+{
+	font-size : 22px;
+	font-family : "Bauhaus 93";
+	color : #ff9900;
+	width : 100px;
+	height : 35px;
+	display:inline-block;
+	text-align: center;	
+	margin : 0px;
+	margin-top : 50px;
+}
+a:link
+{
+	text-decoration:none;
+}
+a:hover
+{
+	background-image : url(../img/button.png);
+	color : red;
+}
+#home
+{
+	margin-left : 80px;
+}
