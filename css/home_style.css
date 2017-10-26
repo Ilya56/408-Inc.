@@ -1,7 +1,7 @@
 body
 {
 	/*background : linear-gradient(90deg, #8f8f8f, #2f2f2f);*/
-	background-image : url(../img/home_background.png);
+	background-image : url(../res/img/backgrounds/home_background.png);
 	background-repeat : no-repeat;
 	background-position: top;
 	/*background : linear-gradient(90deg, #8f8f8f, #2f2f2f);*/
@@ -18,17 +18,17 @@ body
 	height: 100%;
 	z-index: 100;
 	/*box-shadow: 960px 1200px 0 0 rgba(0,0,0,.9) inset;*/
-	animation: shadow_anim 2000ms 1 ease-in-out;
+	animation: shadow_anim 1000ms 1 ease-in-out;
 	animation-fill-mode: forwards;
 }
 @keyframes shadow_anim
 {
 	from {box-shadow: 960px 1200px 0 0 rgba(0,0,0,1) inset;}
 	10% {box-shadow: 960px 1200px 0 0 rgba(0,0,0,1) inset;}
-	15% {box-shadow: 960px 1200px 0 0 rgba(0,0,0,0.8) inset;}
-	20% {box-shadow: 960px 1200px 0 0 rgba(0,0,0,0.4) inset;}
-	25% {box-shadow: 960px 1200px 0 0 rgba(0,0,0,.8) inset;}
-	30% {box-shadow: 960px 1200px 0 0 rgba(0,0,0,1) inset;}
+	20% {box-shadow: 960px 1200px 0 0 rgba(0,0,0,0.5) inset;}
+	30% {box-shadow: 960px 1200px 0 0 rgba(0,0,0,0.2) inset;}
+	40% {box-shadow: 960px 1200px 0 0 rgba(0,0,0,.5) inset;}
+	70% {box-shadow: 960px 1200px 0 0 rgba(0,0,0,.95) inset;}
 	to {box-shadow: 960px 1200px 0 0 rgba(0,0,0,0) inset; z-index:-1;}
 }
 #head
@@ -80,7 +80,7 @@ body
 }
 .menuButtons:hover
 {
-	background-image : url(../img/head_button.png);
+	background-image : url(../res/img/buttons/head_button.png);
 	background-repeat: no-repeat;
 	background-position: 50% 70%;
 }
@@ -109,7 +109,7 @@ body
 	width: 60px;
 	margin: 210px 0;
 	float: left;
-	background-image : url(../img/news_button_l.png);
+	background-image : url(../res/img/buttons/news_button_l.png);
 	background-color : rgb(181,181,181);
 	background-size: cover;
 }
@@ -120,7 +120,7 @@ body
 	width: 60px;
 	margin: 210px 0;
 	float: right;
-	background-image : url(../img/news_button_r.png);
+	background-image : url(../res/img/buttons/news_button_r.png);
 	background-color : rgb(181,181,181);
 	background-size: cover;
 }

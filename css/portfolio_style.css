@@ -1,6 +1,6 @@
 body
 {
-	background-image : url(../img/default_background.png);
+	background-image : url(../res/img/backgrouds/default_background.png);
 	background-repeat : no-repeat;
 	background-position: top;
 	background-color : #2f2f2f;
@@ -33,7 +33,7 @@ body
 	height : 72px;
 	display: inline-block;
 	float: left;
-	line-height: 100%;
+	line-height: 100%
 }
 .menuButtons
 {
@@ -54,7 +54,7 @@ body
 }
 .menuButtons:hover
 {
-	background-image : url(../img/head_button.png);
+	background-image : url(../res/img/buttons/head_button.png);
 	background-repeat: no-repeat;
 	background-position: 50% 70%;
 }
@@ -71,7 +71,7 @@ body
 	margin-top: 20px;
 	right: 0;
     left: 0;
-	background-image : url(../img/error.png);
+	background-image : url(../res/img/error.png);
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }
