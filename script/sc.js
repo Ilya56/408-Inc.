@@ -1,32 +1,22 @@
-var start = function()
-{
-	var n1=document.getElementById('in1').value;
-	var n2=document.getElementById('in2').value;
-	var sum = +n1 + +n2;
-	alert(sum);
-	//alert("n = "+n+"\nn! = "+fact(n));
-	//document.getElementById('in').value="name";
-};
+var lang = "en";
 
-var fact = function(a)
-{
-	if(a>1)
-		return a*fact(a-1);
-	else
-		return 1;
-};
+var langs = {
+	"en" : {
+		"home" : "Home",
+		"about" : "About",
+		"portfolio" : "Portfolio",
+		"contact" : "Contact",
+	},
+	"ru" : {
+		"home" : "Главная",
+		"about" : "О нас",
+		"portfolio" : "Портфолио",
+		"contact" : "Контакты",
+	}
+}
 
-var handleClick = function(Event)
-{
-	alert("Q");
-};
-
-/*document.getElementById('home').addEventListener('click', handleClick);*/
-
-var lang;
 function getLang() {
 	localStorage.getItem('language') === null ? setLang('en') : false;
-
 }
 
 function setLang(lang1) {
@@ -34,11 +24,14 @@ function setLang(lang1) {
 	lang = lang1
 }
 
-function setLang() {
-	if navigator.language == 'ru' {
-		setLang('lang.ru.js')
+function setDefaultLang() {
+	if (navigator.language === 'ru') {
+		setLang("ru")
 	}
-	alert(lang.home)
 }
 
-window.onload = s;
+window.onload = setDefaultLang;
+
+var home = document.getElementById("home");
+alert(langs[lang])
+home.innerHTML = langs[lang]["home"]
